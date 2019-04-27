@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ProgressStyle" parent="AppTheme">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBarTitleWhite">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomEditText" parent="AppTheme">
+        <item name="android:textColor">@color/color_light_grey_1</item>
+        <item name="android:textColorHint">@color/color_light_grey</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorSecondary">@color/color_red</item>
+        <item name="android:textSize">@dimen/text_size_14_sp</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braintech.carpooling.mvp.splash_login.GetPhoneNumberActivity">
+
+<include layout = "@layout/toolbar_without_title"/>
+
+
+<ImageView
+    android:id="@+id/imgViewCarPooling"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar_without_title"
+    android:src="@mipmap/ic_logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/margin_50dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/margin_10dp">
+
+
+
+
+
+        <TextView
+            android:id="@+id/txtViewPhoneMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/take_phone_number"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_size_18sp" />
+
+        <LinearLayout
+            android:id="@+id/linLayPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtViewPhoneMessage"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/edtTextFixNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_fix_phone_number"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:enabled="false"
+            android:textSize="@dimen/txt_size_14sp"
+            android:textColor="@color/color_light_grey_1"/>
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtTextPhoneNumber"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/edtTextFixNumber"
+            android:hint="@string/hint_phone_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:theme="@style/CustomEditText" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgViewLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linLayPhone"
+            android:src="@mipmap/ic_line"
+            android:layout_marginTop="@dimen/margin_7dp"
+            android:scaleType="centerCrop"/>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/drawable_rectangle_sky_blue"
+        android:text="@string/title_submit"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:textColor="@color/color_white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

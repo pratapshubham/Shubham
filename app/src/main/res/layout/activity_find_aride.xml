@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braintech.carpooling.mvp.find_a_ride.activity.FindARideActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/margin_7dp"
+        android:padding="@dimen/margin_5dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/title_from"
+            android:textColorHint="@color/color_light_grey"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/txt_size_18sp" />
+
+        <View
+            android:id="@+id/viewFrom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/autoCompleteTextViewSource"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/color_black"></View>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewFrom"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/title_to"
+            android:textColor="@color/color_grey"
+            android:textColorHint="@color/color_light_grey"
+            android:textSize="@dimen/txt_size_18sp" />
+
+        <View
+            android:id="@+id/viewTo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/autoCompleteTextViewDestination"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/color_black"></View>
+
+
+        <TextView
+            android:id="@+id/txtViewDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewTo"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:hint="@string/title_date_find_a_ride"
+            android:textColorHint="@color/color_light_grey"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/txt_size_17sp" />
+
+
+        <View
+            android:id="@+id/viewDate"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtViewDatePicker"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/color_black"></View>
+
+
+        <TextView
+            android:id="@+id/txtViewTimePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewDate"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:hint="@string/title_time_find_a_ride"
+            android:textColorHint="@color/color_light_grey"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/txt_size_17sp" />
+
+
+        <View
+            android:id="@+id/viewTime"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtViewTimePicker"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/color_black"></View>
+
+        <TextView
+            android:id="@+id/txtViewSeatsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewTime"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="@string/title_seats"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_size_18sp" />
+
+        <RelativeLayout
+            android:id="@+id/relLayIncDec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/viewTime"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_8dp">
+
+            <ImageView
+                android:id="@+id/imgViewDecrease"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_minus" />
+
+            <TextView
+                android:id="@+id/txtViewNumberOfSeatsAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_3dp"
+                android:layout_toRightOf="@+id/imgViewDecrease"
+                android:text="1"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_size_20sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imgViewIncrease"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_toRightOf="@+id/txtViewNumberOfSeatsAvailable"
+                android:src="@mipmap/ic_plus" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/drawable_rectangle_sky_blue"
+        android:text="@string/btn_confirm"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txt_size_14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_your_booking">
+
+    <RelativeLayout
+        android:id="@+id/relLayTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_item_your_booking_rect_transparent"
+        android:padding="@dimen/margin_10dp">
+
+        <TextView
+            android:id="@+id/txtViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_date"
+            android:textColor="@color/color_light_grey"
+            android:textSize="@dimen/txt_size_18sp" />
+
+
+        <TextView
+            android:id="@+id/txtViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtViewDate"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:text="@string/title_time"
+            android:textColor="@color/color_light_grey"
+            android:textSize="@dimen/txt_size_18sp" />
+
+
+        <TextView
+            android:id="@+id/txtViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtViewDate"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:text="@string/title_address"
+            android:textColor="@color/color_light_grey"
+            android:textSize="@dimen/txt_size_18sp" />
+
+
+        <TextView
+            android:id="@+id/txtViewCarOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtViewAddress"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:text="@string/title_car_owner"
+            android:textColor="@color/color_light_grey"
+            android:textSize="@dimen/txt_size_18sp" />
+
+
+        <TextView
+            android:id="@+id/txtViewCarOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_below="@+id/txtViewAddress"
+            android:layout_toRightOf="@+id/txtViewCarOwner"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:text="@string/title_car_owner_name"
+            android:textColor="@color/color_light_grey"
+            android:textSize="@dimen/txt_size_18sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relLayTop"
+        android:background="@drawable/drawable_item_your_booking_rect_transparent"
+        android:padding="@dimen/margin_10dp">
+
+
+        <TextView
+            android:id="@+id/txtViewConfirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_confirmation"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_light_grey"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/txt_size_18sp" />
+
+        <ImageView
+            android:id="@+id/imgViewProfileImage"
+            android:layout_width="@dimen/margin_50dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

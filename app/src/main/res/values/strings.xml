@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Car Pooling</string>
+
+
+    <!--Common messages-->
+    <string name="error_internet">No internet connection!</string>
+    <string name="error_server">The server does not respond.</string>
+    <string name="title_retry">Try again</string>
+    <string name="title_gps">We need GPS to continue this app, your GPS seems to be disabled, you want to enable it?</string>
+    <string name="title_yes">Yes</string>
+    <string name="title_no">No</string>
+    <string name="title_cancel">cancel</string>
+    <string name="title_ok">ok</string>
+    <string name="title_go_to_setting">Go to setting</string>
+    <string name="title_submit">SUBMIT</string>
+    <string name="crash_toast_text">Bulldock crashed.</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_your_rides">Your Rides</string>
+    <string name="title_phone_number_must">We need phone number to continue this app, you want to enter it?</string>
+    <string name="title_back_again_to_exit">Please click again to finish</string>
+
+    <!--splash login messages-->
+
+    <string name="btn_facebook_login">Login with Facebook</string>
+    <string name="title_splash">Carpooling!</string>
+    <string name="take_phone_number">Enter Phone Number</string>
+    <string name="error_phone_number">Please enter phone number.</string>
+    <string name="error_complete_phone_number">Please enter valid phone number.</string>
+    <string name="hint_phone_number">9874561230</string>
+    <string name="hint_fix_phone_number">+91 -" "</string>
+
+    <!--facebook login credentials-->
+    <string name="facebook_app_id">390639534764439</string>
+    <string name="fb_login_protocol_scheme">fb390639534764439</string>
+    <string name="title_activity_dashboard_map">Map</string>
+
+
+    <!--maps  credentials-->
+    <string name="google_maps_key">AIzaSyD5FO5h7BAAViynh8k6xZoDNOqpWizNe2w</string>
+
+    <!--maps  activity-->
+    <string name="title_going_somewhere">Going Somewhere?</string>
+    <string name="title_share_msg">Share your travel costs with our community.</string>
+    <string name="btn_offer_a_ride">Offer A Ride</string>
+    <string name="btn_find_a_ride">Find A Ride</string>
+    <string name="title_leaving_from">Leaving from here?</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_continue">Continue</string>
+
+    <!--Bottom Navigation-->
+    <string name="title_home">Home</string>
+    <string name="title_history">History</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="title_profile">Profile</string>
+
+    <!--History fragment-->
+    <string name="title_your_offered_rides">Your offered rides</string>
+    <string name="title_offered_rides_message">You have no recent ride offers. They are\n automatically archived after 20 days.</string>
+    <string name="title_see_archived_rides">See Archived rides</string>
+    <string name="title_your_booking">Your Bookings</string>
+    <string name="title_date">Wed. 13 Jun - </string>
+    <string name="title_time">19:00</string>
+    <string name="title_address">Greater Noida >> New Delhi</string>
+    <string name="title_car_owner">Car owner:</string>
+    <string name="title_car_owner_name">Deepak</string>
+    <string name="title_confirmation">CANCELLED</string>
+    <string name="title_stops_in_between">Stops in between:" "</string>
+    <string name="title_price">Price:" "</string>
+    <string name="title_status">Status:" "</string>
+    <string name="title_owner">Owner:" "</string>
+
+    <!--Offers A Ride Fragment-->
+    <string name="title_leaving_form">Where are you leaving from?</string>
+    <string name="title_enter_full_address">Enter the full address</string>
+    <string name="title_use_my_current_location">USE MY CURRENT LOCATION</string>
+
+    <!--Destination Activity-->
+    <string name="title_destination">Where are you heading?</string>
+
+    <!--Find A Ride Activity-->
+    <string name="title_from">From</string>
+    <string name="title_to">To</string>
+    <string name="title_date_find_a_ride">Date</string>
+    <string name="title_time_find_a_ride">Leaving after</string>
+    <string name="title_seats">Seats</string>
+    <string name="error_source_address">Please enter source address.</string>
+    <string name="error_destination_address">Please enter destination address.</string>
+    <string name="error_date">Please select date.</string>
+    <string name="error_time">Please select time.</string>
+    <string name="error_number_passenger">Please confirm your seats.</string>
+
+
+    <!-- Add more passenger activity-->
+    <string name="title_add_more_passenger">Want more passenger? Add a \n few stopovers!</string>
+    <string name="title_add_stop_overs">Add stopovers and get more co-travellers</string>
+    <string name="title_number_of_passenger">So how many passenger\n can you take?</string>
+    <string name="title_every_passenger_pays_you">Every passenger pays you</string>
+
+    <string name="title_coming_soon">Coming Soon </string>
+
+
+</resources>

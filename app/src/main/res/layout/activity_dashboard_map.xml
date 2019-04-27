@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braintech.carpooling.mvp.offer_a_ride.activity.LeavingMapActivity">
+
+    <include layout="@layout/toolbar_without_title"/>
+
+    <TextView
+        android:id="@+id/txtViewLeavingFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_size_18sp"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:layout_below="@+id/toolbar_without_title"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_leaving_from"/>
+
+    <fragment android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/txtViewLeavingFrom"
+        android:layout_marginTop="@dimen/margin_15dp"
+        tools:context="com.abhiandroid.GoogleMaps.googlemaps.MapsActivity"/>
+
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:background="@drawable/drawable_button_background_blue"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:text="@string/btn_confirm"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txt_size_14sp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

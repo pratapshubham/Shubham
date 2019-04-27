@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "175980232388",
+    "firebase_url": "https://quikhiring-2202b.firebaseio.com",
+    "project_id": "quikhiring-2202b",
+    "storage_bucket": "quikhiring-2202b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175980232388:android:853b81d3b41052aa",
+        "android_client_info": {
+          "package_name": "com.braintech.carpooling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175980232388-1a3itpp30fij5m5m801icd63fuuqhpfn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.braintech.carpooling",
+            "certificate_hash": "781da3ad97f5c7dc6ac7ac9e626f5943268dd179"
+          }
+        },
+        {
+          "client_id": "175980232388-9nf7fjt17gvvimebf1jl6k7f75ev7bqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3UEWHzs9up7ogXOdZ0y2IX65kO2IRsgM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175980232388-9nf7fjt17gvvimebf1jl6k7f75ev7bqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braintech.carpooling.mvp.offer_a_ride.activity.NumberOfPassengerActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <TextView
+        android:id="@+id/txtViewNumberOfPassengerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_below="@+id/toolbar"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="@string/title_number_of_passenger"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/txt_size_20sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relLayNumberInOrDec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/imgViewDecrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:tint="@color/sky_blue"
+            android:src="@mipmap/ic_minus"/>
+
+        <TextView
+            android:id="@+id/txtViewNumberOfPassenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:text="3"
+            android:textSize="80sp"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgViewDecrease"/>
+
+
+        <ImageView
+            android:id="@+id/imgViewIncrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtViewNumberOfPassenger"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:tint="@color/sky_blue"
+            android:src="@mipmap/ic_plus"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/drawable_rectangle_sky_blue"
+        android:text="@string/btn_confirm"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txt_size_14sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

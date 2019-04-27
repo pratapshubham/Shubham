@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F6CC2E</color>
+    <color name="colorPrimaryDark">#F6CC2E</color>
+    <color name="colorAccent">#00AFF5</color>
+
+    <color name="bgBottomNavigation">#F6CC2E</color>
+
+    <!--Color gradient-->
+    <color name="color_gradient_top">#f1f2ed</color>
+    <color name="color_gradient_bottom">#ffffff</color>
+
+
+    <color name="color_black">#000000</color>
+    <color name="color_transparent">#44000000</color>
+
+    <color name="color_orange">#FFA500</color>
+
+    <!--Shades of Red-->
+    <color name="color_white">#ffffff</color>
+    <color name="color_off_white">#f9f9f9</color>
+
+
+    <!--Shades of Red-->
+    <color name="color_red">#ff5d5b</color>
+    <color name="color_dark_red">#E55451</color>
+
+    <!--Shades of grey-->
+    <color name="color_background_grey">#F2F3EE</color>
+    <color name="color_brown">#451700</color>
+    <color name="color_grey">#696969</color>
+    <color name="color_light_grey">#EEd3d3d3</color>
+    <color name="color_light_grey_1">#919191</color>
+    <color name="color_light_grey_drawable">#B9B9B9</color>
+    <color name="dark_blue">#3B5990</color>
+    <color name="sky_blue">#00AFF5</color>
+</resources>

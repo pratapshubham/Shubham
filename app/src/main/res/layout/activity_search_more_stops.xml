@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braintech.carpooling.mvp.offer_a_ride.activity.SearchMoreStopsActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/sky_blue"
+        android:id="@+id/searchBar">
+
+        <ImageView
+            android:id="@+id/imgViewBackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_2dp"
+            android:paddingTop="@dimen/margin_2dp"
+            android:tint="@color/color_white"
+            android:src="@mipmap/ic_back" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewForLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgViewBackArrow"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_light_grey"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/txt_size_18sp"
+            android:hint="Start typing..."/>
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_below="@+id/searchBar"
+        android:visibility="gone"
+        android:id="@+id/relLayMyLocation">
+
+        <ImageView
+            android:id="@+id/imgViewLocationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_2dp"
+            android:paddingTop="@dimen/margin_2dp"
+            android:tint="@color/color_white"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:id="@+id/txtViewMyLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgViewLocationIcon"
+            android:layout_centerVertical="true"
+            android:text="My Location"
+            android:textColor="@color/sky_blue"
+            android:layout_marginLeft="@dimen/margin_20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

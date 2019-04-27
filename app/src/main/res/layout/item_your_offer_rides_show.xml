@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_5dp"
+    android:elevation="@dimen/margin_5dp"
+    android:id="@+id/item_your_booking">
+
+    <RelativeLayout
+        android:id="@+id/relLayTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_item_your_booking_rect_transparent"
+        android:padding="@dimen/margin_10dp">
+
+        <TextView
+            android:id="@+id/txtViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_date"
+            android:textColor="@color/color_light_grey_1"
+            android:textSize="@dimen/txt_size_18sp" />
+
+
+        <TextView
+            android:id="@+id/txtViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtViewDate"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:text="@string/title_time"
+            android:textColor="@color/color_light_grey_1"
+            android:textSize="@dimen/txt_size_18sp" />
+
+        <RelativeLayout
+            android:id="@+id/relLayAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtViewTime">
+
+
+        <TextView
+            android:id="@+id/txtViewSourceAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:text="@string/title_address"
+            android:textColor="@color/color_light_grey_1"
+            android:textSize="@dimen/txt_size_18sp" />
+
+
+        <TextView
+            android:id="@+id/txtViewCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_toRightOf="@+id/txtViewSourceAddress"
+            android:text=">>"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/txt_size_18sp" />
+
+
+        <TextView
+            android:id="@+id/txtViewDestinationAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_toRightOf="@+id/txtViewCharacter"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:text="@string/title_car_owner_name"
+            android:textColor="@color/color_light_grey_1"
+            android:textSize="@dimen/txt_size_18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayStopsInBetween"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relLayAddress"
+            android:layout_marginTop="@dimen/margin_5dp">
+
+            <TextView
+                android:id="@+id/txtViewStopsInBetweenTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_stops_in_between"
+                android:textSize="@dimen/txt_size_18sp"
+                android:textColor="@color/color_grey"/>
+
+
+            <TextView
+                android:id="@+id/txtViewStopsInBetween"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtViewStopsInBetweenTitle"
+                android:layout_marginLeft="@dimen/margin_3dp"
+                android:textSize="@dimen/txt_size_18sp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relLayStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relLayStopsInBetween"
+            android:layout_marginTop="@dimen/margin_5dp">
+
+            <TextView
+                android:id="@+id/txtViewStatusTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_status"
+                android:textSize="@dimen/txt_size_18sp"
+                android:textColor="@color/color_grey"/>
+
+
+            <TextView
+                android:id="@+id/txtViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtViewStatusTitle"
+                android:layout_marginLeft="@dimen/margin_3dp"
+                android:textSize="@dimen/txt_size_18sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

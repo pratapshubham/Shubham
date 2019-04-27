@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braintech.carpooling.mvp.offer_a_ride.activity.CalculateAmountActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <TextView
+        android:id="@+id/txtViewAddMorePassenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="@string/title_every_passenger_pays_you"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/txt_size_20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relLayCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/relLayPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/txtViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:textSize="60sp"
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgViewRupee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtViewPrice"
+                android:src="@mipmap/ic_rupee"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relLayPrice"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/txtViewSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noida"
+                android:textSize="20sp"
+                android:textColor="@color/color_grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewCharacter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txtViewSource"
+                android:text=">>"
+                android:layout_marginLeft="@dimen/margin_12dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/txt_size_18sp" />
+
+            <TextView
+                android:id="@+id/txtViewDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Delhi"
+                android:layout_toRightOf="@+id/txtViewCharacter"
+                android:layout_marginLeft="@dimen/margin_12dp"
+                android:textSize="20sp"
+                android:textColor="@color/color_grey"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/drawable_rectangle_sky_blue"
+        android:text="@string/btn_continue"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txt_size_14sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

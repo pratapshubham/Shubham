@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braintech.carpooling.mvp.offer_a_ride.activity.LeavingFromActivity">
+
+
+    <include layout="@layout/toolbar_without_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollIndicatorUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnConfirm"
+        android:layout_below="@+id/toolbar_without_title">
+
+
+        <RelativeLayout
+            android:id="@+id/relLayTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_10dp">
+
+            <TextView
+                android:id="@+id/txtViewAddMorePassenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:text="@string/title_add_more_passenger"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_size_20sp" />
+
+
+            <TextView
+                android:id="@+id/textViewForSearchLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewAddMorePassenger"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@android:color/transparent"
+                android:text="@string/title_add_stop_overs"
+                android:textSize="@dimen/txt_size_18sp" />
+
+
+            <ImageView
+                android:id="@+id/imgViewLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewForSearchLocation"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewStopPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imgViewLine"
+                android:layout_marginTop="@dimen/margin_25dp"></android.support.v7.widget.RecyclerView>
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/drawable_rectangle_sky_blue"
+        android:text="@string/btn_confirm"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txt_size_14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

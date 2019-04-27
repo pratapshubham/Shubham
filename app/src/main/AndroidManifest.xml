@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.braintech.carpooling">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".common.application.CarPoolingApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Push Notification -->
+        <service android:name=".common.push.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".common.push.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.splash_login.SplashLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.offer_a_ride.activity.LeavingMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.your_rides.activity.YourRidesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.splash_login.GetPhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+        <activity
+            android:name=".mvp.offer_a_ride.activity.LeavingFromActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.offer_a_ride.activity.DestinationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.offer_a_ride.activity.AddMoreStopoversActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.offer_a_ride.activity.SearchMoreStopsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.offer_a_ride.activity.DateSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.offer_a_ride.activity.LeavingTimeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.offer_a_ride.activity.NumberOfPassengerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.offer_a_ride.activity.CalculateAmountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.find_a_ride.activity.FindARideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.find_a_ride.activity.ListOfFindRidesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".mvp.find_a_ride.activity.DetailFindRideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".mvp.offer_a_ride.activity.RideConfirmationActivity" />
+        <activity android:name=".mvp.calender.CalenderActivity" />
+        <activity
+            android:name=".mvp.reciepe.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarTitleWhite"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+        <activity android:name=".mvp.offer_a_ride.activity.SeekBarActivity"></activity>
+    </application>
+
+</manifest>

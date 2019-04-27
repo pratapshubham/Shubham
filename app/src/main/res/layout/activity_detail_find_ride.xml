@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braintech.carpooling.mvp.find_a_ride.activity.DetailFindRideActivity">
+
+    <include layout="@layout/toolbar_details_find_a_ride"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_without_title"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_10dp">
+
+
+    <TextView
+        android:id="@+id/txtViewRideSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride Summary"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_size_20sp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/relLayAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewRideSummary"
+        android:padding="@dimen/margin_15dp">
+
+        <LinearLayout
+            android:id="@+id/linLayView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgViewCircle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_empty_circle" />
+
+            <View
+                android:layout_width="@dimen/margin_1dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_black"></View>
+
+
+            <ImageView
+                android:id="@+id/imgViewCircle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_empty_circle" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relLayMainAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_toRightOf="@+id/linLayView">
+
+            <TextView
+                android:id="@+id/txtViewSourceAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delhi"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_size_17sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtViewSourceFullAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewSourceAddress"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="Delhi, India"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_size_17sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtViewDestinationAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewSourceFullAddress"
+                android:layout_marginTop="@dimen/margin_45dp"
+                android:text="Noida"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_size_17sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtViewDestinationFullAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewDestinationAddress"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="Noida, Uttar pradesh, India"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_size_17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relLayNumberOfSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relLayMainAddress"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_toRightOf="@+id/linLayView">
+
+            <TextView
+                android:id="@+id/txtViewNumberOfSeatsAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_size_17sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtViewSeatsAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_toRightOf="@+id/txtViewNumberOfSeatsAvailable"
+                android:text="Seats Available"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_size_17sp"
+                 />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:layout_below="@+id/relLayAddress"
+        android:layout_marginTop="@dimen/margin_3dp"
+        android:background="@color/color_grey"></View>
+
+    <RelativeLayout
+        android:id="@+id/relLayPricePerSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_15dp"
+        android:layout_below="@+id/viewLine">
+
+        <TextView
+            android:id="@+id/txtViewPriceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price per seat"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_size_17sp"
+             />
+
+        <ImageView
+            android:id="@+id/imgViewRupee"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_rupee"/>
+
+
+        <TextView
+            android:id="@+id/txtViewAmountPerSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgViewRupee"
+            android:text="90"
+            android:layout_marginRight="-5dp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_size_17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewLine1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:layout_below="@+id/relLayPricePerSeat"
+        android:layout_marginTop="@dimen/margin_3dp"
+        android:background="@color/color_grey"></View>
+
+    <RelativeLayout
+        android:id="@+id/relLayNumberSeats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_15dp"
+        android:layout_below="@+id/viewLine1">
+
+
+        <TextView
+            android:id="@+id/txtViewSeatsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Number of seats to book"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_size_18sp" />
+
+        <RelativeLayout
+            android:id="@+id/relLayIncDec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/imgViewDecrease"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_minus" />
+
+            <TextView
+                android:id="@+id/txtViewNumberSeatsToBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_3dp"
+                android:layout_toRightOf="@+id/imgViewDecrease"
+                android:text="1"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_size_20sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imgViewIncrease"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_toRightOf="@+id/txtViewNumberSeatsToBook"
+                android:src="@mipmap/ic_plus" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewLine2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:layout_below="@+id/relLayNumberSeats"
+        android:layout_marginTop="@dimen/margin_3dp"
+        android:background="@color/color_grey"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/relLayTotalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_15dp"
+        android:layout_below="@+id/viewLine2">
+
+        <TextView
+            android:id="@+id/txtViewTotalAmountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total amount"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_size_17sp"
+            />
+
+
+        <TextView
+            android:id="@+id/txtViewTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgViewRupee1"
+            android:layout_marginRight="-5dp"
+            android:text="90"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_size_17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgViewRupee1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_rupee"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/drawable_rectangle_sky_blue"
+        android:text="Book"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txt_size_14sp"
+        android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
